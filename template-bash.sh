@@ -11,7 +11,7 @@ usage() {
 
 main() {
     [[ $# -eq 0 ]] && usage
-    local readonly param="$1"
+    local -r param="$1"
     
     echo "Exécution sécurisée avec le paramètre : ${param}"
 }
